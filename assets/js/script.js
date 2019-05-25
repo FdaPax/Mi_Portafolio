@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("a").click(function(event){
     if (this.hash !== "") {
       event.preventDefault();
-
+      
       var gato = this.hash;
 
       $("html, body").animate({
@@ -16,4 +16,8 @@ $(document).ready(function(){
 
   $('[data-toggle="popover"]').popover();
 
-  });
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+});
